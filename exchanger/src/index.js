@@ -9,11 +9,11 @@ function exchanger(currency) {
   const dough = { };                                 // potential coins from exchange
   let coins;                                         // transactional coins
 
-  if (currency >= 10000)                             // sending a kindly message if the limit is exceeded
+  if (currency >= 10000)                             // sending a kindly message if the amount is too large
     throw "The exchange limit is exceeded";
   else if (currency > 0) {                           // if there's currency to exchange
-    for (const note of notes) {                      // iterating through coin notes
-      coins = Math.floor(currency / notes[note])  ;  // getting potential coins
+    for (const note in notes) {                      // iterating through coin notes
+      coins = Math.floor(currency / notes[note]);    // getting potential coins
       currency %= notes[note];                       // getting remaining currency
 
       if (coins > 0)                                 // if there are coins
