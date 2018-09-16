@@ -15,7 +15,7 @@ Implement a function **exchanger** changing currency notes to the combination of
 exchanger(0)     // { }
 exchanger(1)     // { "P": 1 }
 exchanger(15)    // { "D": 1, "N": 1 }
-exchanger(289)   // { "H": 5, "Q": 1, "D": 1", "N": 1, "P": 4 } 
+exchanger(294)   // { "H": 5, "Q": 1, "D": 1", "N": 1, "P": 4 } 
 exchanger(10000) // throws "The exchange limit is exceeded"
 ```
 
