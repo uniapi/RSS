@@ -7,9 +7,9 @@ Implement a function **zerotect**, given a natural number, detects trailing zero
 
 ### Example:
 ```js
-zerotect(2)  // 0 because !2 = 2 * 1 = 2
-zerotect(5)  // 1 because !5 = 5 * 4 * 3 * 2 * 1 = 120
-zerotect(10) // 2 because !10 = 3628800
+zerotect(2)  // 0 because 2! = 2 * 1 = 2
+zerotect(5)  // 1 because 5! = 5 * 4 * 3 * 2 * 1 = 120
+zerotect(10) // 2 because 10! = 3628800
 ```
 
 ### Requirements
